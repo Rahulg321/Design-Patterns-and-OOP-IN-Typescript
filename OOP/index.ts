@@ -37,7 +37,7 @@ class getterSetter {
     console.log(this.address);
   }
 
-  // we define a getter and setter for a private variable so that we can perform some additional logic before exposing them to outside public
+  // we define a getter and setter for a private variable so that we can perform some additional logic/checks before exposing them to outside public
   get length() {
     return this._length;
   }
@@ -120,6 +120,7 @@ class Derived extends Base {
   }
 
   logSomething() {
+    // we can access protected variables inside derived classes
     console.log(this.sportName);
   }
 
